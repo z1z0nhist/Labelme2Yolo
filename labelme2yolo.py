@@ -9,7 +9,7 @@ print("="*20, ' Start transform... ', "="*20)
 #  __ignore__
 # _background_ 로 시작하도록
 
-labelme2coco.run(input_dir='/home/jml/_workspace/ultralytics/datasets/CJ/images/', output_dir='result', labels='boxes.txt', noviz=True)
+labelme2coco.run(input_dir='/path/to/datasets/images/', output_dir='result', labels='labels.txt', noviz=True)
 
 convert_coco_json('./result/',  # directory with *.json
                   use_segments=True,
